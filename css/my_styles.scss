@@ -1,0 +1,130 @@
+.logo a img {
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(-4px 4px 4px white);
+}
+
+.logo {
+    height: 45px;
+}
+
+.logo-side {
+    height: 60px;
+
+    a img {
+        height: 100%;
+        object-fit: contain;
+        filter: drop-shadow(-4px 4px 4px white);
+    }
+}
+
+.gradientAnimated {
+    background: linear-gradient(30deg,
+            #002FFF, #9900FF, #ff0000,
+            #002FFF, #9900FF, #ff0000,
+            #002FFF, #9900FF, #ff0000,
+            #002FFF);
+    /* больше повторений = более плавный цикл */
+    background-size: 600% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Refault';
+    font-weight: normal;
+    animation: gradientMove 15s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: -200% 0%;
+    }
+}
+
+.menu-area {
+    background: #002fff;
+    background: -webkit-linear-gradient(142deg, rgba(0, 47, 255, 1) 0%, rgba(0, 47, 255, 1) 10%, rgba(153, 0, 255, 1) 90%, rgba(153, 0, 255, 1) 100%);
+    background: -moz-linear-gradient(142deg, rgba(0, 47, 255, 1) 0%, rgba(0, 47, 255, 1) 10%, rgba(153, 0, 255, 1) 90%, rgba(153, 0, 255, 1) 100%);
+    background: linear-gradient(142deg, rgba(0, 47, 255, 1) 0%, rgba(0, 47, 255, 1) 10%, rgba(153, 0, 255, 1) 90%, rgba(153, 0, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002FFF", endColorstr="#9900FF", GradientType=0);
+
+    &::after {
+        background: rgba(0, 47, 255, 1);
+        bottom: -17px;
+    }
+
+    &::before {
+        background: rgba(153, 0, 255, 1);
+        bottom: -17px;
+    }
+}
+
+
+.header-icon a {
+    height: 100%;
+    background: transparent;
+}
+
+.navbar-wrap {
+    >ul>li.active>a {
+        color: #ffffff;
+    }
+
+    >ul>li:hover>a {
+        color: #ffffff;
+    }
+
+    ul li a {
+        padding: 23px 23px;
+
+        &::after {
+            background: #00000069;
+        }
+
+        &::before {
+            background: #ffffff;
+            left: -7px
+        }
+    }
+
+    ul li .sub-menu {
+        left: -8px;
+    }
+}
+
+
+
+.header-action ul .header-sine {
+    background: transparent;
+    border: 2px solid white;
+
+
+    &::before {
+        display: none;
+    }
+
+    a {
+        i {
+            box-shadow: 0 0 0 transparent;
+            background: transparent;
+            border: 2px solid white;
+
+            &::after,
+            &::before {
+                color: white;
+            }
+        }
+
+        color: white;
+
+        &::before {
+            display: none;
+        }
+
+        &:hover {
+            color: white;
+        }
+    }
+}

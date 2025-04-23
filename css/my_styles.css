@@ -1,0 +1,104 @@
+@charset "UTF-8";
+.logo a img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: drop-shadow(-4px 4px 4px white);
+}
+
+.logo {
+  height: 45px;
+}
+
+.logo-side {
+  height: 60px;
+}
+.logo-side a img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: drop-shadow(-4px 4px 4px white);
+}
+
+.gradientAnimated {
+  background: linear-gradient(30deg, #002FFF, #9900FF, #ff0000, #002FFF, #9900FF, #ff0000, #002FFF, #9900FF, #ff0000, #002FFF);
+  /* больше повторений = более плавный цикл */
+  background-size: 600% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Refault";
+  font-weight: normal;
+  animation: gradientMove 15s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
+.menu-area {
+  background: #002fff;
+  background: linear-gradient(142deg, rgb(0, 47, 255) 0%, rgb(0, 47, 255) 10%, rgb(153, 0, 255) 90%, rgb(153, 0, 255) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002FFF", endColorstr="#9900FF", GradientType=0);
+}
+.menu-area::after {
+  background: rgb(0, 47, 255);
+  bottom: -17px;
+}
+.menu-area::before {
+  background: rgb(153, 0, 255);
+  bottom: -17px;
+}
+
+.header-icon a {
+  height: 100%;
+  background: transparent;
+}
+
+.navbar-wrap > ul > li.active > a {
+  color: #ffffff;
+}
+.navbar-wrap > ul > li:hover > a {
+  color: #ffffff;
+}
+.navbar-wrap ul li a {
+  padding: 23px 23px;
+}
+.navbar-wrap ul li a::after {
+  background: rgba(0, 0, 0, 0.4117647059);
+}
+.navbar-wrap ul li a::before {
+  background: #ffffff;
+  left: -7px;
+}
+.navbar-wrap ul li .sub-menu {
+  left: -8px;
+}
+
+.header-action ul .header-sine {
+  background: transparent;
+  border: 2px solid white;
+}
+.header-action ul .header-sine::before {
+  display: none;
+}
+.header-action ul .header-sine a {
+  color: white;
+}
+.header-action ul .header-sine a i {
+  box-shadow: 0 0 0 transparent;
+  background: transparent;
+  border: 2px solid white;
+}
+.header-action ul .header-sine a i::after, .header-action ul .header-sine a i::before {
+  color: white;
+}
+.header-action ul .header-sine a::before {
+  display: none;
+}
+.header-action ul .header-sine a:hover {
+  color: white;
+}

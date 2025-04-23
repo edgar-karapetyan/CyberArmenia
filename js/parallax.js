@@ -85,7 +85,7 @@ s.prototype.extend = function () {
   this.layers = this.element.getElementsByClassName("layer"), this.depths = [];
   for (var t = 0, i = this.layers.length; i > t; t++) {
     var e = this.layers[t];
-    this.transform3DSupport && this.accelerate(e), e.style.display = "block", this.depths.push(this.data(e, "depth") || 0)
+    this.transform3DSupport && this.accelerate(e), this.depths.push(this.data(e, "depth") || 0)
   }
 }, s.prototype.updateDimensions = function () {
   this.ww = t.innerWidth, this.wh = t.innerHeight, this.wcx = this.ww * this.originX, this.wcy = this.wh * this.originY, this.wrx = Math.max(this.wcx, this.ww - this.wcx), this.wry = Math.max(this.wcy, this.wh - this.wcy)
