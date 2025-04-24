@@ -215,13 +215,13 @@ label {
 }
 
 ::-moz-selection {
-    background: #ff8503;
+    background: #9900ff;
     color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #ff8503;
+    background: #9900ff;
     color: #fff;
     text-shadow: none;
 }
@@ -254,7 +254,7 @@ label {
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background-color: #ff8503;
+    background-color: #9900ff;
 }
 
 .theme-overlay {
@@ -782,7 +782,7 @@ label {
 
 .header-fixed-position {
     display: block;
-    height: 111px;
+    height: 60px;
 }
 
 /* 3. Mobile-menu */

@@ -284,10 +284,6 @@
         margin-left: 100px;
     }
 
-    .header-action ul .header-sine a {
-        display: none;
-    }
-
     .header-icon a {
         width: 72px;
         height: calc(100% + 18px);
@@ -621,6 +617,14 @@
 @media (max-width: 991.98px) {
     .custom-container {
         max-width: 720px;
+    }
+
+    .footer-menu nav{
+        margin: 0 auto;
+    }
+
+    .header-action ul .header-sine a {
+        display: none;
     }
 
     .container {

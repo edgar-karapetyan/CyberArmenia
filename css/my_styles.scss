@@ -1,11 +1,22 @@
-.logo a img {
-    height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(-4px 4px 4px white);
-}
-
 .logo {
     height: 45px;
+
+    a img {
+        height: 100%;
+        object-fit: contain;
+        filter: drop-shadow(-4px 4px 4px white);
+        animation: shadowPulse 3s infinite alternate;
+    }
+
+    @keyframes shadowPulse {
+        0% {
+            filter: drop-shadow(-4px 4px 4px white);
+        }
+
+        100% {
+            filter: drop-shadow(-6px 6px 6px rgb(0, 0, 0));
+        }
+    }
 }
 
 .logo-side {
@@ -16,6 +27,10 @@
         object-fit: contain;
         filter: drop-shadow(-4px 4px 4px white);
     }
+}
+
+.f-logo .title {
+    font-size: 30px;
 }
 
 .gradientAnimated {
@@ -127,4 +142,44 @@
             color: white;
         }
     }
+}
+
+.just-gamer-img .main-img {
+    filter: drop-shadow(-4px 4px 4px red);
+}
+
+.navbar-wrap ul li .sub-menu {
+    border: none;
+    background: #5f11f9;
+}
+
+main {
+    background: black;
+}
+
+.area-bg {
+    background-image: url(../images/area_bg.jpg);
+    background-repeat: repeat-y;
+    background-size: 40%;
+    background-position: center;
+}
+
+.live-stream-bg {
+    background-image: none;
+}
+
+.live-stream-bg::before {
+    content: none;
+}
+
+.shape{
+    opacity: 0.8;
+}
+
+.winner-wrap{
+    background: #1f2029ab;
+}
+
+.just-gamer-content-box{
+    background: #1f2029ab;
 }
